@@ -4,8 +4,8 @@ Lizzie's Crossing Clone
 
 TODO:
 PHASE ONE
-- Set up React.js
-  - https://scrimba.com/articles/create-react-app-with-vite/  
+- [x]Set up React.js
+  - [x] https://scrimba.com/articles/create-react-app-with-vite/  
 - Create Tile Component
 - Create grid of Tile Components
 - Change display of tile Components based on properties
