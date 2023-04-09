@@ -1,5 +1,7 @@
 # nonogram-sweeper
 Lizzie's Crossing Clone
+https://eslee.itch.io/lizzi-crossing
+https://nonogram-sweeper.netlify.app/
 
 
 TODO:
@@ -9,7 +11,8 @@ PHASE ONE
 - [ ] Create Tile Component
 - [ ] Create grid of Tile Components
 - [ ] Change display of tile Components based on properties
-- [ ] Deploy on glitch.io or some other platform
+- [x] Deploy on glitch.io or some other platform
+
 
 PHASE TWO 
 - [ ] Functions for Tile Components
