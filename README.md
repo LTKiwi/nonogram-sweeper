@@ -1,6 +1,8 @@
 # nonogram-sweeper
 Lizzie's Crossing Clone
 https://eslee.itch.io/lizzi-crossing
+
+How's it looking so far?
 https://nonogram-sweeper.netlify.app/
 
 
