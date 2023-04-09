@@ -6,20 +6,20 @@ TODO:
 PHASE ONE
 - [x] Set up React.js
   - [x] https://scrimba.com/articles/create-react-app-with-vite/  
-- Create Tile Component
-- Create grid of Tile Components
-- Change display of tile Components based on properties
-- Deploy on glitch.io or some other platform
+- [ ] Create Tile Component
+- [ ] Create grid of Tile Components
+- [ ] Change display of tile Components based on properties
+- [ ] Deploy on glitch.io or some other platform
 
 PHASE TWO 
-- Functions for Tile Components
+- [ ] Functions for Tile Components
   - [ ] Expose: Makes a tile hidden:false, like stepping on a tile or beginning on map
   - [ ] Marker: Puts a symbol on a tile, like flagging or question mark when clicked
   - [ ] Player: Makes a tile player:true, for movement about map.
   - [ ] Initialize: set the properties of a tile - random(blank or mine), path (start,end,??guaranteed safe path of forced blanks??)
 
 PHASE THREE
-- Figure out how to guarantee a safe path. Gonna need a CompSci degree for this. 
+- [ ] Figure out how to guarantee a safe path. Gonna need a CompSci degree for this. 
   - [ ] One way is to check if there is a path without obstacles(randomly generated), though this normally assumes starting in a corner (start is not random) based on the content I'm seeing.
     - [ ] https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
     - [ ] https://brilliant.org/wiki/rectangular-grid-walk-no-restriction/
