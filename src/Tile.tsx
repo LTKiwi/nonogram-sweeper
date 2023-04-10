@@ -1,17 +1,12 @@
 import './Tile.css'
 import { randomColor } from './utils';
 
-function Tile() {
-
-    const props = {
-        text: ':)',
-        classes: ['player','mine','hidden','goal']
-    }
+function Tile({ occupiers=[''], hint=0 }) {
 
   return (
-      <div className="tile"
+      <div className={`tile ${occupiers.join(' ') }`}
           style={{ backgroundColor: randomColor() }}>
-          <h1>{props.text}</h1>
+          {hint>0 && hint}  
       </div>
   )
 }

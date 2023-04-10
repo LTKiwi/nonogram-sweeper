@@ -8,7 +8,13 @@ function App() {
   return (
     <div className="App">
       <h1>Disco Dance Floor</h1>
-          <Tile /> <Tile /> <Tile /><Tile /><Tile /><Tile /><Tile />
+          <Tile occupiers={['player']} />
+          <Tile occupiers={['flag']} />
+          <Tile occupiers={['mine']} />
+          <Tile occupiers={['goal']} />
+          <Tile hint={1} />
+          <Tile hint={4} />
+          <Tile />
     </div>
   )
 }
