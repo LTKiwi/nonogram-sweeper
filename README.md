@@ -5,6 +5,8 @@ https://eslee.itch.io/lizzi-crossing
 How's it looking so far?
 https://nonogram-sweeper.netlify.app/
 
+Using Emojis as images
+https://commons.wikimedia.org/w/index.php?title=Category:Noto_Color_Emoji_KitKat
 
 TODO:
 PHASE ONE
