@@ -1,0 +1,29 @@
+.tile {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mine {
+    background-image: url("./assets/mine.svg");
+}
+
+.goal {
+    background-image: url("./assets/melon.svg");
+}
+
+.flag {
+    background-image: url("./assets/flag.svg");
+}
+
+.player {
+    background-image: url("./assets/noot.svg");
+}
