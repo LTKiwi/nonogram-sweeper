@@ -7,8 +7,9 @@
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    line-height:60px;
-    font-size:30px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .mine {
