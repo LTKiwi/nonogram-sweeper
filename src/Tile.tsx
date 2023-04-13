@@ -1,7 +1,7 @@
 import './Tile.css'
 import { randomColor } from './utils';
 
-function Tile({ occupiers=[''], hint=0, explored=false }) {
+function TileComponent({ occupiers=[''], hint=0, explored=false }) {
 
   return (
       <div className={`tile ${occupiers.join(' ') }`}
@@ -11,4 +11,4 @@ function Tile({ occupiers=[''], hint=0, explored=false }) {
   )
 }
 
-export default Tile
+export default TileComponent

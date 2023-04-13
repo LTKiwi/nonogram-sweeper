@@ -1,19 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import Grid from './Grid'
+import { initializeGrid, Tile } from './utils';
 
 
-const initialGrid = [
-    { id: 0, title: 'Big Bellies', seen: false },
-    { id: 1, title: 'Lunar Landscape', seen: false },
-    { id: 2, title: 'Terracotta Army', seen: true },
-];
 
 function App() {
-  const [list, setList] = useState(
-    initialList
-  );
-  
+  const [grid, setGrid] = useState(initializeGrid);
+    console.log("Hi")
+    console.log(grid);
 
   return (
     <div className="App">
@@ -26,7 +21,7 @@ function App() {
           {/*<Tile explored hint={4} />*/}
           {/*<Tile explored />*/}
           {/*<Tile />*/}
-          <Grid />
+          <Grid grid={grid} />
     </div>
   )
 }
