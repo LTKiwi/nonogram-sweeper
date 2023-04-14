@@ -1,3 +1,4 @@
+import './Grid.css'
 import TileComponent from './Tile'
 import { Tile } from './utils';
 
@@ -7,19 +8,15 @@ interface GridProps {
 
 function Grid({grid}:GridProps ) {
     const listTiles = grid.map((row: Tile[], index) => (
-        <div key={index}>
-            Row {index}
+        <div className="row" key={index}>
             {grid[index].map((tile, column) => (
-                <div key={column}>
-                    {tile.occupier} {`${tile.explored}`} {`${tile.player}`} {`${tile.hint}`}
-                </div>
+                <TileComponent key={column} {...tile } /> 
             ))}
-
         </div>));
     return (
-        <div>
+        <div className="grid">
             {listTiles}
-      </div>
+        </div>
   )
 }
 

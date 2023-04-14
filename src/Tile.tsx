@@ -1,12 +1,23 @@
 import './Tile.css'
-import { randomColor } from './utils';
+import { useState } from 'react';
+import { randomColor, Tile, Occupier } from './utils';
 
-function TileComponent({ occupiers=[''], hint=0, explored=false }) {
+function TileComponent({ occupier, hint, explored, player }: Tile) {
+    const [tile, setTile] = useState({
+        occupier: occupier === undefined ? '' : Occupier[occupier],
+        hint: hint,
+        explored: explored ? randomColor() : 'black',
+        player: player ? 'player' : ''
+    })
+    function handleClick() {
+
+    }
 
   return (
-      <div className={`tile ${occupiers.join(' ') }`}
-          style={{ backgroundColor: explored? randomColor() : 'black'  }}>
-          {hint>0 && hint}  
+      <div onClick={handleClick}
+          className={`tile ${tile.occupier} ${tile.player}`}
+          style={{ backgroundColor: tile.explored  }}>
+          {/*{tile.hint>0 && tile.hint}  */}
       </div>
   )
 }
