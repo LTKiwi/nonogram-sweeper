@@ -12,15 +12,15 @@
     font-weight: bold;
 }
 
-.mine {
+.Mine {
     background-image: url("./assets/mine.svg");
 }
 
-.goal {
+.Goal {
     background-image: url("./assets/melon.svg");
 }
 
-.flag {
+.Flag {
     background-image: url("./assets/flag.svg");
 }
 

@@ -4,19 +4,31 @@ import { randomColor, Tile, Occupier } from './utils';
 
 function TileComponent({ occupier, hint, explored, player }: Tile) {
     const [tile, setTile] = useState({
-        occupier: occupier === undefined ? '' : Occupier[occupier],
+        occupier: occupier,
         hint: hint,
-        explored: explored ? randomColor() : 'black',
-        player: player ? 'player' : ''
+        explored: explored,
+        player: player
     })
-    function handleClick() {
 
+    function handlePlayerVisit() {
+        if (!tile.explored) {
+            setTile({
+                ...tile,
+                explored: true
+            })
+        }
     }
 
-  return (
+    function handleClick() {
+        handlePlayerVisit()
+    }
+
+
+
+    return (
       <div onClick={handleClick}
-          className={`tile ${tile.occupier} ${tile.player}`}
-          style={{ backgroundColor: tile.explored  }}>
+            className={`tile ${tile.occupier === undefined || !tile.explored ? '' : Occupier[tile.occupier]} ${tile.player ? 'player' : ''}`}
+            style={{ backgroundColor: tile.explored ? randomColor() : 'black'  }}>
           {/*{tile.hint>0 && tile.hint}  */}
       </div>
   )
