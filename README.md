@@ -13,7 +13,7 @@ PHASE ONE
 - [x] Set up React.js
   - [x] https://scrimba.com/articles/create-react-app-with-vite/  
 - [x] Create Tile Component
-- [ ] Create grid of Tile Components
+- [x] Create grid of Tile Components
 - [x] Change display of tile Components based on properties
 - [x] Deploy on glitch.io or some other platform
 
