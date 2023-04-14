@@ -7,7 +7,8 @@ function TileComponent({ occupier, hint, explored, player }: Tile) {
         occupier: occupier,
         hint: hint,
         explored: explored,
-        player: player
+        player: player,
+        flag: false
     })
 
     function handlePlayerVisit() {
@@ -23,11 +24,17 @@ function TileComponent({ occupier, hint, explored, player }: Tile) {
         handlePlayerVisit()
     }
 
+    function handleFlag() {
+        setTile({
+            ...tile,
+            flag: !tile.flag
+        })
+    }
 
 
     return (
       <div onClick={handleClick}
-            className={`tile ${tile.occupier === undefined || !tile.explored ? '' : Occupier[tile.occupier]} ${tile.player ? 'player' : ''}`}
+            className={`tile ${tile.occupier === undefined || !tile.explored ? '' : Occupier[tile.occupier]} ${tile.player ? 'player' : ''} ${tile.flag ? 'Flag': ''}`}
             style={{ backgroundColor: tile.explored ? randomColor() : 'black'  }}>
           {/*{tile.hint>0 && tile.hint}  */}
       </div>

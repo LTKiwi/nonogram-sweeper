@@ -12,7 +12,6 @@ export function randomColor() {
 
 export enum Occupier {
     Mine,
-    Flag,
     Goal
 }
 
@@ -24,7 +23,7 @@ export class Tile {
 
     constructor() {
         this.explored = false;
-        this.occupier = Math.floor(Math.random() * 2); //only Mines and Flags
+        this.occupier = Math.floor(Math.random() * 2) ? 0 : undefined ; //only Mines and empty
         this.player = false;
     }
 };
@@ -39,6 +38,13 @@ export function initializeGrid(rows = 10, cols = 10) {
             new Array(cols).fill(null)
         .map(()=> new Tile())//content of Grid
     );
+    const startrow = Math.floor(Math.random() * cols)
+    const startcol = Math.floor(Math.random() * rows)
+    const endrow = Math.floor(Math.random() * cols)
+    const endcol = Math.floor(Math.random() * rows)
+    grid[startrow][startcol].player = true
+    grid[startrow][startcol].occupier = undefined
+    grid[endrow][endcol].occupier=1 
     return grid
 }
 
